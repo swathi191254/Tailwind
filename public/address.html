@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="address.css">
+</head>
+<body>
+    <div>
+        <h4 class="active">Delivery Address</h4>
+        <h4>Add New Address</h4>
+        <form>
+            <input id="firstName" name="firstName" title="Please enter your firstname" placeholder="First Name" type="text" maxlength="20">
+            <br>
+            <input id="lastName" name="lastName" title="Please enter your lastname" placeholder="Last Name" type="text">
+            <br>
+            <input type="text" value="+91" disabled="disabled">
+            <br>
+            <input id="phone" name="phone" title="Please provide a number" placeholder="Mobile Number" type="tel" class="number" maxlength="10">
+            <br>
+            <input id="postcode" name="postcode" title="Please enter valid pincode" placeholder="Pincode" type="tel" class="postcode number">
+            <br>
+            <input id="townCity" name="townCity" title="Please enter your City" placeholder="City" type="text" class="townCity">
+            <br>
+            <input placeholder="State">
+            <br>
+            <input id="address1" name="line1" title="Please enter your Address" minlength="3" aria-required="true" placeholder="Address Line 1" type="text">
+            <br>
+        
+        </form>
+        <div class="check-val">
+            <input type="checkbox" name="defaultAddress" id="defaultAddress" checked="checked">
+            <label for="defaultAddress">Use this as my default delivery
+                address</label>
+        </div>
+        <input type="checkbox" id="saveInAddressBook" name="saveInAddressBook" checked="" required="required" aria-required="true"> <label for="saveInAddressBook">
+            I agree to the <a href="/term-condition" target="_blank">Terms and Conditions</a></label>
+        <h4>Express Store Pick Up <span class="new-tag">NEW</span></h4>
+</div>
+  <div class="delivery-cod-options clearfix">
+<p>Check Store Availability</p>
+<form id="delivery_pincode_id" class="delivery_pincode_id" method="post">
+
+    <div class="check_available">
+    <input class="delivery_address_input" type="tel" name="pincode" placeholder="Enter Pincode"> <input type="submit" value="CHECK">
+    </div>
+    
+    
+    
+    
+    </form></div>
+    <h4>Pick Up By</h4>
+    <input id="pickupSelf" name="pickupBy" checked="checked" type="radio" value="Self"><label for="pickupSelf">Self</label>
+    <input id="pickupElse" name="pickupBy" type="radio" value="Else"><label for="pickupElse">Someone else</label>
+    <input id="pickupPersonName" name="pickupPersonName" title="Please enter your first name" placeholder="Name" type="text" maxlength="41">
+    <input type="text" name="" value="" placeholder="+91">
+<input id="pickupPersonNumber" name="pickupPersonNumber" title="Please provide a number" placeholder="Mobile Number" type="text" class="number" value="" maxlength="10">
+<h4>Billing Address</h4>
+<input id="addressId" name="addressId" class="add_edit_delivery_address_id" type="hidden" value="">
+<input id="firstName" name="firstName" title="Please enter your firstname" placeholder="First Name" type="text" maxlength="20">
+<input id="lastName" name="lastName" title="Please enter your lastname" placeholder="Last Name" type="text" maxlength="20">
+<input type="text" value="+91" disabled="disabled">
+<input id="phone" name="phone" title="Please provide a number" placeholder="Mobile Number" type="text" class="number" maxlength="10"> 
+<input id="townCity" name="townCity" title="Please enter your City" placeholder="City" type="text" class="townCity" value="" readonly="readonly" style="background-color: rgb(231, 231, 231);">
+<input id="address1" name="line1" title="Please enter your Address" minlength="3" aria-required="true" placeholder="Address Line 1" type="text" required="required" value="" maxlength="50">
+<input id="address2" name="line2" minlength="3" placeholder="Address Line 2 (Optional)" type="text" class="jq_filed_address_error" value="" maxlength="50">
+<input type="checkbox" id="saveInAddressBook" name="saveInAddressBook" checked="" required="required" aria-required="true"> <label for="saveInAddressBook">
+    I agree to the <a href="/term-condition" target="_blank">Terms and Conditions</a></label>
+    <button id="checkout_proceed_to_pay_submit" type="submit" class="continue-btn jq-continue-btn-enableDisable">Save and Proceed</button>
+    
+
+</body>
+</html>
